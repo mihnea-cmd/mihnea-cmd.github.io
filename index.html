@@ -4,10 +4,17 @@
 <head>
 	<center>
 		<style>
+
 				body {
 					background-color: #283042;
 					font-size: 39px;
+					color: black;
 					padding-top: 25px;
+				}
+
+				.dark-mode {
+					background-color: black;
+					color: white;
 				}
 
 		</style>
@@ -17,9 +24,17 @@
 </head>
 
 <body>
+	<p> Toggle theme </p>
+	<button onclick = "toggleFunction()"> Toggle theme </button>
+
+	<script>
+	function toggleFunction() {
+		var element = document.body;
+		element.classList.toggle("dark-mode");
+	}
+	</script>
 
 </body>
-
 
 
 </html>
